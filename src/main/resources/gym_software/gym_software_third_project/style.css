@@ -1,0 +1,85 @@
+.root {
+    -fx-font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    -fx-base: #ffffff;
+    -fx-background-color: #f5f5f5;
+    -fx-background-image: url('gym.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+
+/* Style for labels */
+.label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Style for text fields */
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 1);
+    -fx-text-fill: #000000;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Style for buttons */
+.button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 6px 20px;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.button:pressed {
+    -fx-background-color: #004080;
+}
+
+/* Style for TableView */
+.table-view {
+    -fx-background-color: #333333;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #444444;
+    -fx-border-radius: 5px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .cell {
+    -fx-background-color: #333333;
+    -fx-text-fill: #ffffff !important;
+    -fx-border-color: transparent;
+}
+
+.table-view .row-cell {
+    -fx-background-color: #333333;
+    -fx-text-fill: #ffffff !important;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5px;
+}
+
+.table-view .row-cell:selected {
+    -fx-background-color: #0056b3;
+    -fx-text-fill: #ffffff !important;
+}
+
+.table-view .row-cell:hover {
+    -fx-background-color: #444444;
+    -fx-text-fill: #ffffff !important;
+}

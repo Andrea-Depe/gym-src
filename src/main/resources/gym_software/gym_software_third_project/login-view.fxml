@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="600.0" minWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gym_software.gym_software_third_project.controller.UserController">
+   <children>
+      <VBox alignment="CENTER" fillWidth="false" layoutX="457.0" layoutY="129.0" pickOnBounds="false" prefHeight="417.0" prefWidth="286.0" spacing="20.0" AnchorPane.leftAnchor="457.0" AnchorPane.topAnchor="129.0">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+      
+                   <!-- Campo di testo per il nome utente -->
+          <TextField fx:id="usernameField" prefHeight="39.0" prefWidth="363.0" promptText="Inserisci il nome utente" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+      
+                   <!-- Campo di testo per la password -->
+          <PasswordField fx:id="passwordField" prefHeight="37.0" prefWidth="337.0" promptText="Inserisci la password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      
+                   <Label fx:id="wrongAuth" text="" visible="false" />
+          <Button onAction="#handleLogin" text="Login" />
+          <Label fx:id="registrationText" text="click here to register" visible="false" />
+          <Button fx:id="registraionButton" onAction="#onRegisterButtonClick" text="Registration" visible="false" />
+      </VBox>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="414.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GymPro Manager" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
